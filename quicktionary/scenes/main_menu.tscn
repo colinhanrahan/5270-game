@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://bhac6248v6ppb"]
+
+[ext_resource type="Script" uid="uid://c1pqpmbnd8fao" path="res://scripts/main_menu.gd" id="1_06t4h"]
+[ext_resource type="FontFile" uid="uid://swi7tkrpn8k3" path="res://assets/JetBrainsMono-VariableFont_wght.ttf" id="3_bqqt6"]
+[ext_resource type="Theme" uid="uid://dmppwnm045n5s" path="res://assets/main_theme.tres" id="4_rtw2f"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_opwp4"]
+load_path = "res://.godot/imported/background.png-1fdba8b6a966ce2c2ffc607f7c096e95.ctex"
+
+[sub_resource type="FontVariation" id="FontVariation_wu84c"]
+base_font = ExtResource("3_bqqt6")
+variation_embolden = 1.0
+
+[node name="Control" type="Control" unique_id=1216317830]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundImage" type="TextureRect" parent="." unique_id=536178978]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CompressedTexture2D_opwp4")
+stretch_mode = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1243882118]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -130.5
+offset_top = -94.5
+offset_right = 130.5
+offset_bottom = 94.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_rtw2f")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=384238888]
+layout_mode = 2
+theme = ExtResource("4_rtw2f")
+theme_override_constants/separation = 10
+script = ExtResource("1_06t4h")
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1632230600]
+layout_mode = 2
+theme = ExtResource("4_rtw2f")
+theme_override_fonts/font = SubResource("FontVariation_wu84c")
+text = "Quicktionary!"
+horizontal_alignment = 1
+
+[node name="SingleplayerButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1280843593]
+layout_mode = 2
+text = "Singleplayer"
+
+[node name="MultiplayerButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=324074808]
+layout_mode = 2
+text = "Multiplayer
+"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/SingleplayerButton" to="PanelContainer/VBoxContainer" method="_on_singleplayer_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/MultiplayerButton" to="PanelContainer/VBoxContainer" method="_on_multiplayer_button_pressed"]

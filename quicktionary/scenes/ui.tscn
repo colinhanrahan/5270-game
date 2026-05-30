@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://ntxd88uebas3"]
+
+[ext_resource type="Script" uid="uid://b8qeiby7dk5k1" path="res://test_server.gd" id="1_fyqef"]
+[ext_resource type="Script" uid="uid://cfu6i5gh0y6no" path="res://local_canvas.gd" id="3_27fn8"]
+[ext_resource type="Script" uid="uid://ldr533sg68aw" path="res://remote_canvas.gd" id="4_nltto"]
+
+[node name="Control" type="Control" unique_id=985670782]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fyqef")
+
+[node name="DrawCanvas" type="Node2D" parent="." unique_id=1933461889]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1395448474]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UICanvasLayer" type="CanvasLayer" parent="." unique_id=1443412003]
+unique_name_in_owner = true
+
+[node name="JoinUI" type="VBoxContainer" parent="UICanvasLayer" unique_id=1501383505]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+
+[node name="RoomCodeLabel" type="Label" parent="UICanvasLayer/JoinUI" unique_id=1508146233]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="UICanvasLayer/JoinUI" unique_id=54554137]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UICanvasLayer/JoinUI/CenterContainer" unique_id=683801393]
+layout_mode = 2
+
+[node name="CodeInput" type="LineEdit" parent="UICanvasLayer/JoinUI/CenterContainer/HBoxContainer" unique_id=619143689]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 100)
+layout_mode = 2
+
+[node name="JoinButton" type="Button" parent="UICanvasLayer/JoinUI/CenterContainer/HBoxContainer" unique_id=695189094]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="PredictionsLabel" type="Label" parent="UICanvasLayer" unique_id=626082265]
+unique_name_in_owner = true
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1.0
+offset_bottom = 45.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 2
+
+[node name="RemoteSubViewportContainer" type="SubViewportContainer" parent="." unique_id=133433004]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="RemoteSubViewport" type="SubViewport" parent="RemoteSubViewportContainer" unique_id=1332023040]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+
+[node name="RemoteCanvas" type="Node2D" parent="RemoteSubViewportContainer/RemoteSubViewport" unique_id=123217116]
+unique_name_in_owner = true
+script = ExtResource("4_nltto")
+
+[node name="LocalSubViewportContainer" type="SubViewportContainer" parent="." unique_id=1156270470]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="LocalSubViewport" type="SubViewport" parent="LocalSubViewportContainer" unique_id=637341095]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+
+[node name="LocalCanvas" type="Node2D" parent="LocalSubViewportContainer/LocalSubViewport" unique_id=1924570765]
+unique_name_in_owner = true
+script = ExtResource("3_27fn8")

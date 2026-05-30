@@ -1,10 +1,13 @@
+# Colin Hanrahan
+# server.py
+
 import asyncio
 import json
 import random
 import string
 import websockets
 
-import cairocffi as cairo   # used by original preprocessing, remove?
+import cairocffi as cairo # to match original dataset's preprocessing
 import numpy as np
 import tensorflow as tf
 
@@ -21,6 +24,33 @@ with open("labels.txt") as f:
 print(f"Loaded {len(labels)} labels")
 
 rooms = {}  # code: websocket
+
+MEDALS_FILE = "medals.json"
+HIGHSCORES_FILE = "highscores.json"
+
+def load_medals_for_category(category: str) -> dict:
+    """Loads target medal times for a category, falls back to defaults if missing."""
+    with open(MEDALS_FILE, "r") as f:
+        data = json.load(f)
+        return data[category.lower()]
+
+def save_score_and_get_leaderboard(category: str, name: str, time_taken: float) -> list:
+    """Saves the player's time and returns the top 10 fastest times for this category."""
+    all_scores = {}
+    with open(HIGHSCORES_FILE, "r") as f:
+        all_scores = json.load(f)
+
+    if category not in all_scores:
+        all_scores[category] = []
+    
+    all_scores[category].append({"name": name, "time": time_taken})
+    # sort runs for this category by time (lower time is better)
+    all_scores[category].sort(key=lambda x: x["time"])
+
+    with open(HIGHSCORES_FILE, "w") as f:
+        json.dump(all_scores, f, indent=4)
+
+    return all_scores[category]
 
 def make_code():
     return ''.join(random.choices(string.ascii_uppercase, k=6))
@@ -50,6 +80,8 @@ async def handler(websocket):
                     await asyncio.gather(*[p.send(payload) for p in peers])
             elif kind == "classify":
                 await handle_classify(websocket, msg)
+            elif kind == "submit_score":
+                await handle_submit_score(websocket, msg)
     finally:
         if room_code and room_code in rooms:
             rooms[room_code].discard(websocket)
@@ -67,7 +99,7 @@ def strokes_to_bitmap(strokes, canvas_width, canvas_height, side=28, line_diamet
         norm = [[p[0] * 256.0 / canvas_width, p[1] * 256.0 / canvas_height] for p in stroke]
         normalized.append(norm)
     
-    # center the drawing like the original
+    # center the drawing
     all_x = [p[0] for stroke in normalized for p in stroke]
     all_y = [p[1] for stroke in normalized for p in stroke]
     bbox_max = [max(all_x), max(all_y)]
@@ -123,11 +155,29 @@ async def handle_classify(websocket, data):
     interpreter.set_tensor(input_details[0]['index'], pixels)
     interpreter.invoke()
     output = interpreter.get_tensor(output_details[0]['index'])
-    
-    # TODO: change from top 5 to using raw threshold like Quickdraw
+
+    # godot side uses threshold of 0.3 based on these    
     top5_idx = np.argsort(output[0])[::-1][:5]
     results = [{"label": labels[i], "score": float(output[0][i])} for i in top5_idx]
     await websocket.send(json.dumps({"type": "predictions", "results": results}))
+
+async def handle_submit_score(websocket, data):
+    category = data.get("category", "unknown")
+    name = data.get("name", "Anonymous")
+    time_taken = float(data.get("time", 999.0))
+    
+    # update local storage
+    highscores = save_score_and_get_leaderboard(category, name, time_taken)
+    medals = load_medals_for_category(category)
+    
+    # package to send back to godot
+    response = {
+        "type": "leaderboard_data",
+        "medals": medals,
+        "highscores": highscores
+    }
+    print("sending scores :)")
+    await websocket.send(json.dumps(response))
 
 async def main():
     async with websockets.serve(handler, "0.0.0.0", 8765):

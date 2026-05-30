@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://dbdqlpufjbbhg"]
+
+[ext_resource type="Theme" uid="uid://dmppwnm045n5s" path="res://assets/main_theme.tres" id="1_0t1s1"]
+[ext_resource type="Texture2D" uid="uid://qd5smu5p0o00" path="res://assets/background.png" id="1_4ea5e"]
+[ext_resource type="Script" uid="uid://emyv7nk3b471" path="res://scripts/multiplayer_lobby.gd" id="1_o1atq"]
+[ext_resource type="FontFile" uid="uid://swi7tkrpn8k3" path="res://assets/JetBrainsMono-VariableFont_wght.ttf" id="4_nwqwq"]
+
+[sub_resource type="FontVariation" id="FontVariation_2meg6"]
+base_font = ExtResource("4_nwqwq")
+variation_embolden = 1.0
+
+[node name="Control" type="Control" unique_id=1756185757]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundImage" type="TextureRect" parent="." unique_id=726820453]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_4ea5e")
+stretch_mode = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=86661837]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -332.0
+offset_top = -186.5
+offset_right = 332.0
+offset_bottom = 186.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_0t1s1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=384238888]
+layout_mode = 2
+size_flags_vertical = 4
+theme = ExtResource("1_0t1s1")
+theme_override_constants/separation = 10
+script = ExtResource("1_o1atq")
+
+[node name="LobbyLabel" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1632230600]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_2meg6")
+text = "Lobby"
+horizontal_alignment = 1
+
+[node name="CreateJoinBox" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=130603664]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="JoinBox" type="VBoxContainer" parent="PanelContainer/VBoxContainer/CreateJoinBox" unique_id=642731854]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="JoinInfo" type="Label" parent="PanelContainer/VBoxContainer/CreateJoinBox/JoinBox" unique_id=1538120495]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "To join an existing room, enter the code below:"
+autowrap_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer/CreateJoinBox/JoinBox" unique_id=1402329337]
+layout_mode = 2
+size_flags_vertical = 10
+theme_override_constants/separation = 10
+
+[node name="RoomInput" type="LineEdit" parent="PanelContainer/VBoxContainer/CreateJoinBox/JoinBox/HBoxContainer" unique_id=539919969]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="JoinButton" type="Button" parent="PanelContainer/VBoxContainer/CreateJoinBox/JoinBox/HBoxContainer" unique_id=1280843593]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "→"
+
+[node name="ColorRect" type="ColorRect" parent="PanelContainer/VBoxContainer/CreateJoinBox" unique_id=472483098]
+custom_minimum_size = Vector2(4, 0)
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CreateBox" type="VBoxContainer" parent="PanelContainer/VBoxContainer/CreateJoinBox" unique_id=259392499]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="CreateInfo" type="Label" parent="PanelContainer/VBoxContainer/CreateJoinBox/CreateBox" unique_id=1206774182]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "Or, create a new room that others can join:"
+autowrap_mode = 2
+
+[node name="CreateButton" type="Button" parent="PanelContainer/VBoxContainer/CreateJoinBox/CreateBox" unique_id=324074808]
+layout_mode = 2
+text = "Create Room"
+
+[node name="MainMenuButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=49975716]
+layout_mode = 2
+text = "Main Menu"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/CreateJoinBox/JoinBox/HBoxContainer/JoinButton" to="PanelContainer/VBoxContainer" method="_on_join_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/CreateJoinBox/CreateBox/CreateButton" to="PanelContainer/VBoxContainer" method="_on_create_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/MainMenuButton" to="PanelContainer/VBoxContainer" method="_on_main_menu_button_pressed"]

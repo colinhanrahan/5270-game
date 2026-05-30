@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://csbishwl0aksq"]
+
+[ext_resource type="Theme" uid="uid://dmppwnm045n5s" path="res://assets/main_theme.tres" id="1_a2xqq"]
+
+[node name="Pve" type="Control" unique_id=1348605810]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BlueRect" type="ColorRect" parent="." unique_id=1691113979]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.24313726, 0.63529414, 0.9372549, 1)
+
+[node name="PveLabel" type="Label" parent="." unique_id=689192002]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme = ExtResource("1_a2xqq")
+text = "Multiplayer PvE"

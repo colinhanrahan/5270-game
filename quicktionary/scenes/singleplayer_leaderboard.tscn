@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://braq28qxjsbiw"]
+
+[ext_resource type="Script" uid="uid://ct262bff7aabb" path="res://scripts/singleplayer_leaderboard.gd" id="1_8r8fd"]
+[ext_resource type="StyleBox" uid="uid://bqbmoi6t0crcy" path="res://assets/menu_box.tres" id="2_3b8wp"]
+[ext_resource type="Theme" uid="uid://dmppwnm045n5s" path="res://assets/main_theme.tres" id="2_p2w1v"]
+[ext_resource type="Theme" uid="uid://drxuknxm8sy3v" path="res://assets/grid_box.tres" id="3_3b8wp"]
+
+[node name="SingleplayerLeaderboard" type="Control" unique_id=1608143617]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_8r8fd")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1765318319]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer" unique_id=963114091]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3b8wp")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer" unique_id=79001921]
+layout_mode = 2
+theme = ExtResource("2_p2w1v")
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=1548542040]
+layout_mode = 2
+theme = ExtResource("3_3b8wp")
+text = "Round Over!"
+
+[node name="NameInputContainer" type="HBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=1353669716]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="LineEdit" type="LineEdit" parent="CenterContainer/PanelContainer/VBoxContainer/NameInputContainer" unique_id=1749887375]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Name..."
+max_length = 16
+
+[node name="SubmitButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/NameInputContainer" unique_id=770500843]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+text = "✓"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=1754578874]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+scroll_hint_mode = 3
+
+[node name="LeaderboardList" type="VBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/ScrollContainer" unique_id=1067255460]
+unique_name_in_owner = true
+clip_contents = true
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ReplayButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=1592151481]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Replay Round"
+
+[node name="LobbyButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=103124939]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+text = "Return to Lobby"
+
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/NameInputContainer/SubmitButton" to="." method="_on_submit_button_pressed"]
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/ReplayButton" to="." method="_on_replay_button_pressed"]
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/LobbyButton" to="." method="_on_lobby_button_pressed"]

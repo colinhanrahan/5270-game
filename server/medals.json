@@ -1,0 +1,1727 @@
+{
+    "anvil": {
+        "gold": 3.39,
+        "silver": 4.16,
+        "bronze": 5.07
+    },
+    "animal migration": {
+        "gold": 3.1,
+        "silver": 3.77,
+        "bronze": 4.69
+    },
+    "asparagus": {
+        "gold": 3.69,
+        "silver": 4.83,
+        "bronze": 5.72
+    },
+    "ambulance": {
+        "gold": 6.57,
+        "silver": 7.86,
+        "bronze": 9.12
+    },
+    "axe": {
+        "gold": 2.58,
+        "silver": 3.66,
+        "bronze": 4.66
+    },
+    "airplane": {
+        "gold": 4.64,
+        "silver": 6.16,
+        "bronze": 7.06
+    },
+    "angel": {
+        "gold": 5.11,
+        "silver": 7.18,
+        "bronze": 8.96
+    },
+    "ant": {
+        "gold": 3.55,
+        "silver": 4.6,
+        "bronze": 5.75
+    },
+    "aircraft carrier": {
+        "gold": 4.52,
+        "silver": 6.71,
+        "bronze": 7.89
+    },
+    "arm": {
+        "gold": 3.45,
+        "silver": 4.42,
+        "bronze": 4.95
+    },
+    "the eiffel tower": {
+        "gold": 2.88,
+        "silver": 3.71,
+        "bronze": 5.01
+    },
+    "backpack": {
+        "gold": 4.48,
+        "silver": 5.46,
+        "bronze": 6.8
+    },
+    "the great wall of china": {
+        "gold": 3.64,
+        "silver": 4.59,
+        "bronze": 5.66
+    },
+    "apple": {
+        "gold": 2.0,
+        "silver": 2.82,
+        "bronze": 3.7
+    },
+    "barn": {
+        "gold": 4.96,
+        "silver": 5.84,
+        "bronze": 6.93
+    },
+    "alarm clock": {
+        "gold": 4.01,
+        "silver": 5.35,
+        "bronze": 6.62
+    },
+    "baseball": {
+        "gold": 2.32,
+        "silver": 3.21,
+        "bronze": 3.7
+    },
+    "the mona lisa": {
+        "gold": 5.53,
+        "silver": 6.91,
+        "bronze": 8.65
+    },
+    "banana": {
+        "gold": 1.81,
+        "silver": 2.54,
+        "bronze": 2.96
+    },
+    "basketball": {
+        "gold": 2.79,
+        "silver": 3.75,
+        "bronze": 4.97
+    },
+    "bandage": {
+        "gold": 2.97,
+        "silver": 3.75,
+        "bronze": 4.67
+    },
+    "basket": {
+        "gold": 3.77,
+        "silver": 4.97,
+        "bronze": 6.5
+    },
+    "bird": {
+        "gold": 2.26,
+        "silver": 5.55,
+        "bronze": 7.41
+    },
+    "bat": {
+        "gold": 4.61,
+        "silver": 5.91,
+        "bronze": 7.19
+    },
+    "baseball bat": {
+        "gold": 2.68,
+        "silver": 3.38,
+        "bronze": 4.35
+    },
+    "bathtub": {
+        "gold": 3.44,
+        "silver": 4.65,
+        "bronze": 5.72
+    },
+    "bench": {
+        "gold": 1.92,
+        "silver": 2.61,
+        "bronze": 3.52
+    },
+    "blueberry": {
+        "gold": 1.32,
+        "silver": 2.12,
+        "bronze": 2.87
+    },
+    "boomerang": {
+        "gold": 1.88,
+        "silver": 2.48,
+        "bronze": 3.04
+    },
+    "blackberry": {
+        "gold": 2.75,
+        "silver": 4.12,
+        "bronze": 5.7
+    },
+    "bear": {
+        "gold": 3.69,
+        "silver": 5.17,
+        "bronze": 6.85
+    },
+    "bee": {
+        "gold": 5.25,
+        "silver": 6.55,
+        "bronze": 7.82
+    },
+    "birthday cake": {
+        "gold": 4.41,
+        "silver": 5.52,
+        "bronze": 6.44
+    },
+    "book": {
+        "gold": 4.93,
+        "silver": 6.05,
+        "bronze": 7.03
+    },
+    "beach": {
+        "gold": 3.88,
+        "silver": 5.01,
+        "bronze": 6.04
+    },
+    "binoculars": {
+        "gold": 4.5,
+        "silver": 5.7,
+        "bronze": 6.72
+    },
+    "bed": {
+        "gold": 3.38,
+        "silver": 4.51,
+        "bronze": 6.12
+    },
+    "bicycle": {
+        "gold": 4.49,
+        "silver": 5.71,
+        "bronze": 6.82
+    },
+    "bowtie": {
+        "gold": 2.23,
+        "silver": 3.34,
+        "bronze": 4.07
+    },
+    "broom": {
+        "gold": 2.21,
+        "silver": 2.65,
+        "bronze": 3.69
+    },
+    "brain": {
+        "gold": 5.29,
+        "silver": 6.09,
+        "bronze": 6.93
+    },
+    "bracelet": {
+        "gold": 2.45,
+        "silver": 3.68,
+        "bronze": 4.84
+    },
+    "broccoli": {
+        "gold": 3.51,
+        "silver": 4.47,
+        "bronze": 5.19
+    },
+    "belt": {
+        "gold": 3.65,
+        "silver": 4.8,
+        "bronze": 6.09
+    },
+    "bread": {
+        "gold": 2.13,
+        "silver": 2.67,
+        "bronze": 3.55
+    },
+    "beard": {
+        "gold": 3.75,
+        "silver": 5.05,
+        "bronze": 6.26
+    },
+    "bottlecap": {
+        "gold": 2.58,
+        "silver": 3.57,
+        "bronze": 4.72
+    },
+    "calendar": {
+        "gold": 5.06,
+        "silver": 6.26,
+        "bronze": 8.18
+    },
+    "butterfly": {
+        "gold": 3.52,
+        "silver": 4.61,
+        "bronze": 5.77
+    },
+    "cactus": {
+        "gold": 3.76,
+        "silver": 4.56,
+        "bronze": 5.24
+    },
+    "cake": {
+        "gold": 5.04,
+        "silver": 6.86,
+        "bronze": 9.35
+    },
+    "bucket": {
+        "gold": 2.55,
+        "silver": 3.39,
+        "bronze": 4.24
+    },
+    "bridge": {
+        "gold": 3.61,
+        "silver": 4.9,
+        "bronze": 6.0
+    },
+    "camel": {
+        "gold": 4.78,
+        "silver": 5.81,
+        "bronze": 6.76
+    },
+    "calculator": {
+        "gold": 5.45,
+        "silver": 6.26,
+        "bronze": 7.28
+    },
+    "bus": {
+        "gold": 6.26,
+        "silver": 7.73,
+        "bronze": 8.94
+    },
+    "candle": {
+        "gold": 2.93,
+        "silver": 3.78,
+        "bronze": 4.7
+    },
+    "car": {
+        "gold": 4.66,
+        "silver": 5.56,
+        "bronze": 6.22
+    },
+    "carrot": {
+        "gold": 3.65,
+        "silver": 4.39,
+        "bronze": 5.12
+    },
+    "castle": {
+        "gold": 5.44,
+        "silver": 6.29,
+        "bronze": 7.17
+    },
+    "bulldozer": {
+        "gold": 7.71,
+        "silver": 9.25,
+        "bronze": 10.33
+    },
+    "cannon": {
+        "gold": 4.08,
+        "silver": 5.51,
+        "bronze": 6.58
+    },
+    "cello": {
+        "gold": 4.73,
+        "silver": 6.57,
+        "bronze": 7.83
+    },
+    "campfire": {
+        "gold": 4.92,
+        "silver": 5.93,
+        "bronze": 7.36
+    },
+    "canoe": {
+        "gold": 1.61,
+        "silver": 2.41,
+        "bronze": 2.99
+    },
+    "bush": {
+        "gold": 2.22,
+        "silver": 2.79,
+        "bronze": 3.45
+    },
+    "camouflage": {
+        "gold": 4.12,
+        "silver": 5.51,
+        "bronze": 7.17
+    },
+    "cat": {
+        "gold": 4.44,
+        "silver": 5.62,
+        "bronze": 7.14
+    },
+    "church": {
+        "gold": 3.8,
+        "silver": 5.13,
+        "bronze": 6.42
+    },
+    "circle": {
+        "gold": 0.5,
+        "silver": 0.67,
+        "bronze": 0.92
+    },
+    "camera": {
+        "gold": 3.15,
+        "silver": 3.84,
+        "bronze": 4.62
+    },
+    "clarinet": {
+        "gold": 4.49,
+        "silver": 5.46,
+        "bronze": 6.6
+    },
+    "chandelier": {
+        "gold": 3.42,
+        "silver": 4.25,
+        "bronze": 5.45
+    },
+    "ceiling fan": {
+        "gold": 4.43,
+        "silver": 5.03,
+        "bronze": 6.05
+    },
+    "clock": {
+        "gold": 1.97,
+        "silver": 2.9,
+        "bronze": 3.66
+    },
+    "cookie": {
+        "gold": 3.54,
+        "silver": 4.23,
+        "bronze": 4.89
+    },
+    "couch": {
+        "gold": 5.41,
+        "silver": 6.87,
+        "bronze": 8.22
+    },
+    "cell phone": {
+        "gold": 3.93,
+        "silver": 4.81,
+        "bronze": 5.76
+    },
+    "chair": {
+        "gold": 1.43,
+        "silver": 2.48,
+        "bronze": 3.76
+    },
+    "compass": {
+        "gold": 3.42,
+        "silver": 4.43,
+        "bronze": 5.62
+    },
+    "cooler": {
+        "gold": 3.17,
+        "silver": 4.34,
+        "bronze": 5.36
+    },
+    "computer": {
+        "gold": 4.1,
+        "silver": 4.76,
+        "bronze": 5.9
+    },
+    "crayon": {
+        "gold": 2.97,
+        "silver": 3.81,
+        "bronze": 4.85
+    },
+    "cow": {
+        "gold": 8.42,
+        "silver": 10.13,
+        "bronze": 11.32
+    },
+    "crab": {
+        "gold": 6.56,
+        "silver": 8.27,
+        "bronze": 9.48
+    },
+    "crown": {
+        "gold": 2.63,
+        "silver": 3.41,
+        "bronze": 4.19
+    },
+    "cloud": {
+        "gold": 1.54,
+        "silver": 2.08,
+        "bronze": 2.66
+    },
+    "cruise ship": {
+        "gold": 4.27,
+        "silver": 5.53,
+        "bronze": 6.53
+    },
+    "diamond": {
+        "gold": 2.0,
+        "silver": 2.65,
+        "bronze": 3.59
+    },
+    "crocodile": {
+        "gold": 6.42,
+        "silver": 7.34,
+        "bronze": 8.36
+    },
+    "dragon": {
+        "gold": 8.82,
+        "silver": 10.22,
+        "bronze": 11.98
+    },
+    "diving board": {
+        "gold": 1.81,
+        "silver": 2.65,
+        "bronze": 3.61
+    },
+    "door": {
+        "gold": 1.6,
+        "silver": 2.29,
+        "bronze": 2.81
+    },
+    "dog": {
+        "gold": 5.73,
+        "silver": 7.1,
+        "bronze": 8.67
+    },
+    "elbow": {
+        "gold": 1.77,
+        "silver": 2.56,
+        "bronze": 3.11
+    },
+    "ear": {
+        "gold": 1.49,
+        "silver": 2.13,
+        "bronze": 2.56
+    },
+    "donut": {
+        "gold": 1.38,
+        "silver": 2.19,
+        "bronze": 3.19
+    },
+    "coffee cup": {
+        "gold": 3.04,
+        "silver": 3.95,
+        "bronze": 4.9
+    },
+    "eraser": {
+        "gold": 3.21,
+        "silver": 4.45,
+        "bronze": 5.5
+    },
+    "envelope": {
+        "gold": 2.18,
+        "silver": 2.88,
+        "bronze": 3.56
+    },
+    "drill": {
+        "gold": 3.82,
+        "silver": 4.87,
+        "bronze": 5.73
+    },
+    "dumbbell": {
+        "gold": 2.1,
+        "silver": 2.86,
+        "bronze": 3.69
+    },
+    "dresser": {
+        "gold": 5.04,
+        "silver": 6.08,
+        "bronze": 7.34
+    },
+    "elephant": {
+        "gold": 6.87,
+        "silver": 8.12,
+        "bronze": 9.31
+    },
+    "eye": {
+        "gold": 3.16,
+        "silver": 3.86,
+        "bronze": 4.89
+    },
+    "feather": {
+        "gold": 2.54,
+        "silver": 3.54,
+        "bronze": 4.34
+    },
+    "dishwasher": {
+        "gold": 3.45,
+        "silver": 4.46,
+        "bronze": 5.56
+    },
+    "duck": {
+        "gold": 5.33,
+        "silver": 6.3,
+        "bronze": 8.01
+    },
+    "fan": {
+        "gold": 5.3,
+        "silver": 6.59,
+        "bronze": 7.91
+    },
+    "dolphin": {
+        "gold": 4.79,
+        "silver": 5.67,
+        "bronze": 6.67
+    },
+    "cup": {
+        "gold": 2.21,
+        "silver": 3.03,
+        "bronze": 3.72
+    },
+    "drums": {
+        "gold": 4.19,
+        "silver": 5.8,
+        "bronze": 6.98
+    },
+    "eyeglasses": {
+        "gold": 2.96,
+        "silver": 3.66,
+        "bronze": 4.27
+    },
+    "flamingo": {
+        "gold": 5.03,
+        "silver": 6.03,
+        "bronze": 7.26
+    },
+    "flip flops": {
+        "gold": 2.72,
+        "silver": 3.68,
+        "bronze": 4.77
+    },
+    "finger": {
+        "gold": 1.3,
+        "silver": 1.83,
+        "bronze": 2.37
+    },
+    "face": {
+        "gold": 2.89,
+        "silver": 4.15,
+        "bronze": 5.5
+    },
+    "flower": {
+        "gold": 3.2,
+        "silver": 4.15,
+        "bronze": 4.91
+    },
+    "flying saucer": {
+        "gold": 1.98,
+        "silver": 2.85,
+        "bronze": 3.85
+    },
+    "fireplace": {
+        "gold": 4.4,
+        "silver": 6.25,
+        "bronze": 7.68
+    },
+    "flashlight": {
+        "gold": 4.68,
+        "silver": 5.77,
+        "bronze": 6.99
+    },
+    "fence": {
+        "gold": 2.46,
+        "silver": 3.69,
+        "bronze": 5.04
+    },
+    "firetruck": {
+        "gold": 4.86,
+        "silver": 6.89,
+        "bronze": 8.36
+    },
+    "fork": {
+        "gold": 1.82,
+        "silver": 2.64,
+        "bronze": 3.55
+    },
+    "frog": {
+        "gold": 5.52,
+        "silver": 7.18,
+        "bronze": 8.73
+    },
+    "floor lamp": {
+        "gold": 3.22,
+        "silver": 3.79,
+        "bronze": 4.72
+    },
+    "goatee": {
+        "gold": 4.23,
+        "silver": 5.62,
+        "bronze": 7.12
+    },
+    "fire hydrant": {
+        "gold": 4.52,
+        "silver": 5.71,
+        "bronze": 6.83
+    },
+    "fish": {
+        "gold": 1.91,
+        "silver": 2.55,
+        "bronze": 3.5
+    },
+    "grass": {
+        "gold": 1.74,
+        "silver": 2.31,
+        "bronze": 2.85
+    },
+    "frying pan": {
+        "gold": 1.86,
+        "silver": 2.81,
+        "bronze": 3.61
+    },
+    "garden": {
+        "gold": 5.53,
+        "silver": 6.54,
+        "bronze": 7.71
+    },
+    "giraffe": {
+        "gold": 5.4,
+        "silver": 6.35,
+        "bronze": 7.68
+    },
+    "guitar": {
+        "gold": 6.64,
+        "silver": 8.08,
+        "bronze": 9.34
+    },
+    "hammer": {
+        "gold": 3.69,
+        "silver": 4.85,
+        "bronze": 6.26
+    },
+    "hand": {
+        "gold": 2.75,
+        "silver": 3.54,
+        "bronze": 4.24
+    },
+    "foot": {
+        "gold": 2.13,
+        "silver": 2.91,
+        "bronze": 3.57
+    },
+    "harp": {
+        "gold": 3.31,
+        "silver": 4.43,
+        "bronze": 5.58
+    },
+    "headphones": {
+        "gold": 2.39,
+        "silver": 3.19,
+        "bronze": 3.71
+    },
+    "hockey puck": {
+        "gold": 1.15,
+        "silver": 2.15,
+        "bronze": 2.68
+    },
+    "hexagon": {
+        "gold": 2.5,
+        "silver": 3.11,
+        "bronze": 3.57
+    },
+    "hamburger": {
+        "gold": 3.82,
+        "silver": 4.78,
+        "bronze": 5.79
+    },
+    "garden hose": {
+        "gold": 1.77,
+        "silver": 2.57,
+        "bronze": 3.34
+    },
+    "hat": {
+        "gold": 1.7,
+        "silver": 2.41,
+        "bronze": 3.11
+    },
+    "horse": {
+        "gold": 6.69,
+        "silver": 8.04,
+        "bronze": 9.69
+    },
+    "hockey stick": {
+        "gold": 1.96,
+        "silver": 2.56,
+        "bronze": 2.88
+    },
+    "hedgehog": {
+        "gold": 5.48,
+        "silver": 7.08,
+        "bronze": 8.53
+    },
+    "hospital": {
+        "gold": 4.66,
+        "silver": 5.9,
+        "bronze": 7.72
+    },
+    "helmet": {
+        "gold": 2.7,
+        "silver": 3.56,
+        "bronze": 4.35
+    },
+    "ice cream": {
+        "gold": 2.5,
+        "silver": 3.43,
+        "bronze": 4.25
+    },
+    "hot dog": {
+        "gold": 4.04,
+        "silver": 4.91,
+        "bronze": 5.8
+    },
+    "golf club": {
+        "gold": 1.62,
+        "silver": 2.21,
+        "bronze": 2.67
+    },
+    "hurricane": {
+        "gold": 2.04,
+        "silver": 2.58,
+        "bronze": 3.18
+    },
+    "kangaroo": {
+        "gold": 7.8,
+        "silver": 8.74,
+        "bronze": 9.92
+    },
+    "hourglass": {
+        "gold": 2.46,
+        "silver": 3.54,
+        "bronze": 4.54
+    },
+    "hot air balloon": {
+        "gold": 3.65,
+        "silver": 4.98,
+        "bronze": 6.17
+    },
+    "jail": {
+        "gold": 2.77,
+        "silver": 3.66,
+        "bronze": 4.67
+    },
+    "grapes": {
+        "gold": 3.62,
+        "silver": 4.27,
+        "bronze": 4.88
+    },
+    "jacket": {
+        "gold": 5.61,
+        "silver": 6.61,
+        "bronze": 7.71
+    },
+    "key": {
+        "gold": 3.76,
+        "silver": 4.66,
+        "bronze": 5.54
+    },
+    "keyboard": {
+        "gold": 2.04,
+        "silver": 2.55,
+        "bronze": 3.07
+    },
+    "helicopter": {
+        "gold": 5.93,
+        "silver": 7.5,
+        "bronze": 8.56
+    },
+    "house plant": {
+        "gold": 5.11,
+        "silver": 6.02,
+        "bronze": 7.07
+    },
+    "house": {
+        "gold": 2.36,
+        "silver": 3.17,
+        "bronze": 3.86
+    },
+    "knee": {
+        "gold": 1.48,
+        "silver": 2.3,
+        "bronze": 2.66
+    },
+    "knife": {
+        "gold": 2.59,
+        "silver": 3.46,
+        "bronze": 4.33
+    },
+    "laptop": {
+        "gold": 3.75,
+        "silver": 4.73,
+        "bronze": 5.62
+    },
+    "lighthouse": {
+        "gold": 5.65,
+        "silver": 7.15,
+        "bronze": 8.62
+    },
+    "ladder": {
+        "gold": 2.27,
+        "silver": 2.92,
+        "bronze": 3.55
+    },
+    "light bulb": {
+        "gold": 2.85,
+        "silver": 3.58,
+        "bronze": 4.46
+    },
+    "line": {
+        "gold": 0.19,
+        "silver": 0.26,
+        "bronze": 0.36
+    },
+    "leg": {
+        "gold": 1.4,
+        "silver": 2.29,
+        "bronze": 2.61
+    },
+    "lipstick": {
+        "gold": 3.09,
+        "silver": 3.66,
+        "bronze": 4.69
+    },
+    "lobster": {
+        "gold": 7.46,
+        "silver": 9.36,
+        "bronze": 11.2
+    },
+    "hot tub": {
+        "gold": 4.15,
+        "silver": 5.02,
+        "bronze": 6.1
+    },
+    "leaf": {
+        "gold": 3.34,
+        "silver": 4.29,
+        "bronze": 5.04
+    },
+    "marker": {
+        "gold": 2.49,
+        "silver": 3.27,
+        "bronze": 3.82
+    },
+    "lightning": {
+        "gold": 0.87,
+        "silver": 1.47,
+        "bronze": 2.48
+    },
+    "lantern": {
+        "gold": 5.74,
+        "silver": 6.97,
+        "bronze": 8.13
+    },
+    "mailbox": {
+        "gold": 3.06,
+        "silver": 3.79,
+        "bronze": 4.88
+    },
+    "matches": {
+        "gold": 1.85,
+        "silver": 2.42,
+        "bronze": 3.05
+    },
+    "map": {
+        "gold": 4.5,
+        "silver": 6.33,
+        "bronze": 7.75
+    },
+    "mermaid": {
+        "gold": 8.0,
+        "silver": 10.28,
+        "bronze": 11.72
+    },
+    "megaphone": {
+        "gold": 3.6,
+        "silver": 4.77,
+        "bronze": 5.67
+    },
+    "mosquito": {
+        "gold": 3.58,
+        "silver": 4.99,
+        "bronze": 6.24
+    },
+    "motorbike": {
+        "gold": 4.16,
+        "silver": 5.6,
+        "bronze": 7.14
+    },
+    "lighter": {
+        "gold": 3.83,
+        "silver": 4.64,
+        "bronze": 5.62
+    },
+    "monkey": {
+        "gold": 5.51,
+        "silver": 7.26,
+        "bronze": 9.24
+    },
+    "lollipop": {
+        "gold": 1.38,
+        "silver": 2.03,
+        "bronze": 2.8
+    },
+    "mouse": {
+        "gold": 3.06,
+        "silver": 3.72,
+        "bronze": 5.1
+    },
+    "microphone": {
+        "gold": 3.6,
+        "silver": 4.83,
+        "bronze": 5.96
+    },
+    "lion": {
+        "gold": 4.61,
+        "silver": 5.87,
+        "bronze": 6.77
+    },
+    "mushroom": {
+        "gold": 2.13,
+        "silver": 2.75,
+        "bronze": 3.62
+    },
+    "mountain": {
+        "gold": 0.94,
+        "silver": 1.5,
+        "bronze": 2.19
+    },
+    "nail": {
+        "gold": 1.23,
+        "silver": 2.04,
+        "bronze": 2.77
+    },
+    "moon": {
+        "gold": 1.3,
+        "silver": 1.93,
+        "bronze": 2.34
+    },
+    "oven": {
+        "gold": 3.72,
+        "silver": 4.78,
+        "bronze": 5.84
+    },
+    "mug": {
+        "gold": 2.39,
+        "silver": 3.42,
+        "bronze": 4.26
+    },
+    "mouth": {
+        "gold": 2.74,
+        "silver": 3.8,
+        "bronze": 4.82
+    },
+    "microwave": {
+        "gold": 4.58,
+        "silver": 5.08,
+        "bronze": 5.86
+    },
+    "nose": {
+        "gold": 0.83,
+        "silver": 1.51,
+        "bronze": 2.28
+    },
+    "moustache": {
+        "gold": 1.72,
+        "silver": 2.53,
+        "bronze": 2.73
+    },
+    "owl": {
+        "gold": 6.8,
+        "silver": 8.02,
+        "bronze": 9.67
+    },
+    "onion": {
+        "gold": 2.66,
+        "silver": 4.32,
+        "bronze": 5.92
+    },
+    "palm tree": {
+        "gold": 3.87,
+        "silver": 5.01,
+        "bronze": 6.11
+    },
+    "paintbrush": {
+        "gold": 4.61,
+        "silver": 5.68,
+        "bronze": 7.05
+    },
+    "octopus": {
+        "gold": 3.81,
+        "silver": 4.66,
+        "bronze": 5.56
+    },
+    "parrot": {
+        "gold": 5.78,
+        "silver": 7.25,
+        "bronze": 8.6
+    },
+    "ocean": {
+        "gold": 1.2,
+        "silver": 1.86,
+        "bronze": 2.47
+    },
+    "passport": {
+        "gold": 4.0,
+        "silver": 5.0,
+        "bronze": 6.07
+    },
+    "octagon": {
+        "gold": 3.5,
+        "silver": 4.54,
+        "bronze": 5.23
+    },
+    "parachute": {
+        "gold": 4.09,
+        "silver": 4.94,
+        "bronze": 6.14
+    },
+    "necklace": {
+        "gold": 1.64,
+        "silver": 2.5,
+        "bronze": 3.26
+    },
+    "paint can": {
+        "gold": 3.31,
+        "silver": 4.44,
+        "bronze": 5.26
+    },
+    "piano": {
+        "gold": 4.95,
+        "silver": 5.86,
+        "bronze": 7.05
+    },
+    "pear": {
+        "gold": 2.17,
+        "silver": 2.81,
+        "bronze": 3.4
+    },
+    "pencil": {
+        "gold": 3.56,
+        "silver": 4.42,
+        "bronze": 5.18
+    },
+    "peanut": {
+        "gold": 1.94,
+        "silver": 2.59,
+        "bronze": 3.22
+    },
+    "pants": {
+        "gold": 2.52,
+        "silver": 3.2,
+        "bronze": 3.66
+    },
+    "pig": {
+        "gold": 5.4,
+        "silver": 6.93,
+        "bronze": 8.34
+    },
+    "pineapple": {
+        "gold": 3.98,
+        "silver": 4.86,
+        "bronze": 5.86
+    },
+    "pillow": {
+        "gold": 2.02,
+        "silver": 2.65,
+        "bronze": 3.51
+    },
+    "panda": {
+        "gold": 4.67,
+        "silver": 6.29,
+        "bronze": 7.53
+    },
+    "penguin": {
+        "gold": 5.78,
+        "silver": 6.78,
+        "bronze": 8.01
+    },
+    "paper clip": {
+        "gold": 1.53,
+        "silver": 2.01,
+        "bronze": 2.54
+    },
+    "pickup truck": {
+        "gold": 4.76,
+        "silver": 5.64,
+        "bronze": 6.66
+    },
+    "peas": {
+        "gold": 3.89,
+        "silver": 4.9,
+        "bronze": 5.8
+    },
+    "pool": {
+        "gold": 2.35,
+        "silver": 3.49,
+        "bronze": 4.39
+    },
+    "popsicle": {
+        "gold": 2.31,
+        "silver": 3.17,
+        "bronze": 4.12
+    },
+    "pliers": {
+        "gold": 3.43,
+        "silver": 4.48,
+        "bronze": 5.73
+    },
+    "pizza": {
+        "gold": 4.38,
+        "silver": 6.22,
+        "bronze": 7.92
+    },
+    "power outlet": {
+        "gold": 3.6,
+        "silver": 4.61,
+        "bronze": 5.45
+    },
+    "police car": {
+        "gold": 5.4,
+        "silver": 6.54,
+        "bronze": 7.75
+    },
+    "purse": {
+        "gold": 2.61,
+        "silver": 3.46,
+        "bronze": 4.58
+    },
+    "postcard": {
+        "gold": 3.38,
+        "silver": 4.15,
+        "bronze": 4.68
+    },
+    "picture frame": {
+        "gold": 3.77,
+        "silver": 4.75,
+        "bronze": 5.83
+    },
+    "remote control": {
+        "gold": 3.47,
+        "silver": 4.32,
+        "bronze": 5.01
+    },
+    "roller coaster": {
+        "gold": 2.56,
+        "silver": 4.09,
+        "bronze": 5.51
+    },
+    "pond": {
+        "gold": 1.88,
+        "silver": 2.49,
+        "bronze": 3.4
+    },
+    "rabbit": {
+        "gold": 4.73,
+        "silver": 6.14,
+        "bronze": 7.77
+    },
+    "rain": {
+        "gold": 1.95,
+        "silver": 2.69,
+        "bronze": 3.77
+    },
+    "sandwich": {
+        "gold": 5.34,
+        "silver": 6.62,
+        "bronze": 8.14
+    },
+    "radio": {
+        "gold": 3.54,
+        "silver": 4.6,
+        "bronze": 5.71
+    },
+    "rhinoceros": {
+        "gold": 5.59,
+        "silver": 7.38,
+        "bronze": 8.7
+    },
+    "river": {
+        "gold": 1.96,
+        "silver": 2.55,
+        "bronze": 3.15
+    },
+    "saw": {
+        "gold": 3.29,
+        "silver": 3.9,
+        "bronze": 4.78
+    },
+    "school bus": {
+        "gold": 6.68,
+        "silver": 8.14,
+        "bronze": 9.6
+    },
+    "scorpion": {
+        "gold": 6.79,
+        "silver": 8.14,
+        "bronze": 9.87
+    },
+    "raccoon": {
+        "gold": 6.8,
+        "silver": 8.35,
+        "bronze": 10.32
+    },
+    "rifle": {
+        "gold": 2.26,
+        "silver": 2.75,
+        "bronze": 3.7
+    },
+    "sailboat": {
+        "gold": 2.99,
+        "silver": 3.69,
+        "bronze": 4.6
+    },
+    "rollerskates": {
+        "gold": 3.84,
+        "silver": 4.74,
+        "bronze": 5.68
+    },
+    "rake": {
+        "gold": 2.65,
+        "silver": 3.43,
+        "bronze": 4.28
+    },
+    "sea turtle": {
+        "gold": 5.73,
+        "silver": 6.76,
+        "bronze": 7.87
+    },
+    "shark": {
+        "gold": 5.25,
+        "silver": 6.13,
+        "bronze": 7.5
+    },
+    "shoe": {
+        "gold": 2.61,
+        "silver": 3.53,
+        "bronze": 4.33
+    },
+    "skateboard": {
+        "gold": 2.67,
+        "silver": 3.46,
+        "bronze": 4.19
+    },
+    "scissors": {
+        "gold": 3.22,
+        "silver": 4.28,
+        "bronze": 5.58
+    },
+    "sheep": {
+        "gold": 4.41,
+        "silver": 5.34,
+        "bronze": 6.05
+    },
+    "potato": {
+        "gold": 1.04,
+        "silver": 1.67,
+        "bronze": 2.46
+    },
+    "skyscraper": {
+        "gold": 1.46,
+        "silver": 2.27,
+        "bronze": 3.02
+    },
+    "rainbow": {
+        "gold": 1.05,
+        "silver": 1.78,
+        "bronze": 2.36
+    },
+    "saxophone": {
+        "gold": 3.65,
+        "silver": 4.91,
+        "bronze": 5.72
+    },
+    "shorts": {
+        "gold": 2.37,
+        "silver": 2.95,
+        "bronze": 3.7
+    },
+    "smiley face": {
+        "gold": 1.8,
+        "silver": 2.48,
+        "bronze": 3.4
+    },
+    "sink": {
+        "gold": 5.01,
+        "silver": 7.17,
+        "bronze": 8.76
+    },
+    "snowflake": {
+        "gold": 1.71,
+        "silver": 2.3,
+        "bronze": 3.27
+    },
+    "skull": {
+        "gold": 4.71,
+        "silver": 5.75,
+        "bronze": 6.8
+    },
+    "snowman": {
+        "gold": 2.22,
+        "silver": 2.93,
+        "bronze": 3.57
+    },
+    "see saw": {
+        "gold": 2.21,
+        "silver": 2.96,
+        "bronze": 3.84
+    },
+    "sleeping bag": {
+        "gold": 2.82,
+        "silver": 4.03,
+        "bronze": 5.26
+    },
+    "square": {
+        "gold": 0.98,
+        "silver": 1.25,
+        "bronze": 1.63
+    },
+    "screwdriver": {
+        "gold": 3.9,
+        "silver": 4.75,
+        "bronze": 6.11
+    },
+    "squirrel": {
+        "gold": 7.25,
+        "silver": 8.33,
+        "bronze": 9.92
+    },
+    "shovel": {
+        "gold": 2.58,
+        "silver": 3.67,
+        "bronze": 4.59
+    },
+    "soccer ball": {
+        "gold": 5.95,
+        "silver": 7.31,
+        "bronze": 8.8
+    },
+    "stairs": {
+        "gold": 1.79,
+        "silver": 2.14,
+        "bronze": 2.5
+    },
+    "spoon": {
+        "gold": 1.71,
+        "silver": 2.46,
+        "bronze": 2.89
+    },
+    "spreadsheet": {
+        "gold": 4.36,
+        "silver": 5.16,
+        "bronze": 6.53
+    },
+    "speedboat": {
+        "gold": 4.53,
+        "silver": 5.84,
+        "bronze": 7.32
+    },
+    "squiggle": {
+        "gold": 0.48,
+        "silver": 0.67,
+        "bronze": 1.0
+    },
+    "snorkel": {
+        "gold": 4.08,
+        "silver": 5.24,
+        "bronze": 6.78
+    },
+    "spider": {
+        "gold": 3.79,
+        "silver": 4.88,
+        "bronze": 5.89
+    },
+    "star": {
+        "gold": 1.0,
+        "silver": 1.37,
+        "bronze": 1.98
+    },
+    "stereo": {
+        "gold": 3.77,
+        "silver": 4.69,
+        "bronze": 5.66
+    },
+    "snail": {
+        "gold": 3.17,
+        "silver": 4.45,
+        "bronze": 5.41
+    },
+    "steak": {
+        "gold": 3.16,
+        "silver": 3.66,
+        "bronze": 4.69
+    },
+    "sock": {
+        "gold": 2.15,
+        "silver": 2.86,
+        "bronze": 3.57
+    },
+    "stop sign": {
+        "gold": 5.32,
+        "silver": 6.39,
+        "bronze": 7.29
+    },
+    "submarine": {
+        "gold": 3.06,
+        "silver": 4.41,
+        "bronze": 5.15
+    },
+    "stitches": {
+        "gold": 1.56,
+        "silver": 2.11,
+        "bronze": 2.63
+    },
+    "sun": {
+        "gold": 2.93,
+        "silver": 3.49,
+        "bronze": 3.96
+    },
+    "strawberry": {
+        "gold": 4.52,
+        "silver": 5.48,
+        "bronze": 6.03
+    },
+    "sword": {
+        "gold": 3.39,
+        "silver": 4.29,
+        "bronze": 5.16
+    },
+    "syringe": {
+        "gold": 4.05,
+        "silver": 5.34,
+        "bronze": 6.52
+    },
+    "snake": {
+        "gold": 2.41,
+        "silver": 2.89,
+        "bronze": 4.15
+    },
+    "sweater": {
+        "gold": 4.16,
+        "silver": 4.98,
+        "bronze": 5.69
+    },
+    "streetlight": {
+        "gold": 2.28,
+        "silver": 2.68,
+        "bronze": 3.55
+    },
+    "swan": {
+        "gold": 4.74,
+        "silver": 5.45,
+        "bronze": 6.48
+    },
+    "teapot": {
+        "gold": 4.84,
+        "silver": 5.98,
+        "bronze": 7.1
+    },
+    "stethoscope": {
+        "gold": 3.56,
+        "silver": 4.28,
+        "bronze": 5.06
+    },
+    "suitcase": {
+        "gold": 2.0,
+        "silver": 2.41,
+        "bronze": 2.69
+    },
+    "teddy-bear": {
+        "gold": 5.29,
+        "silver": 6.6,
+        "bronze": 8.2
+    },
+    "toaster": {
+        "gold": 4.64,
+        "silver": 6.19,
+        "bronze": 7.51
+    },
+    "table": {
+        "gold": 1.96,
+        "silver": 3.19,
+        "bronze": 4.07
+    },
+    "tiger": {
+        "gold": 7.25,
+        "silver": 8.99,
+        "bronze": 11.17
+    },
+    "string bean": {
+        "gold": 1.39,
+        "silver": 2.21,
+        "bronze": 2.64
+    },
+    "swing set": {
+        "gold": 3.46,
+        "silver": 3.77,
+        "bronze": 4.64
+    },
+    "television": {
+        "gold": 3.48,
+        "silver": 4.87,
+        "bronze": 6.29
+    },
+    "toothpaste": {
+        "gold": 3.78,
+        "silver": 4.88,
+        "bronze": 5.81
+    },
+    "stove": {
+        "gold": 4.89,
+        "silver": 6.14,
+        "bronze": 7.82
+    },
+    "toilet": {
+        "gold": 4.38,
+        "silver": 5.15,
+        "bronze": 6.12
+    },
+    "tooth": {
+        "gold": 2.35,
+        "silver": 3.1,
+        "bronze": 3.73
+    },
+    "telephone": {
+        "gold": 3.69,
+        "silver": 4.61,
+        "bronze": 5.52
+    },
+    "tennis racquet": {
+        "gold": 4.93,
+        "silver": 6.1,
+        "bronze": 7.29
+    },
+    "toe": {
+        "gold": 1.91,
+        "silver": 2.81,
+        "bronze": 3.74
+    },
+    "toothbrush": {
+        "gold": 2.58,
+        "silver": 3.47,
+        "bronze": 4.13
+    },
+    "tent": {
+        "gold": 2.39,
+        "silver": 3.15,
+        "bronze": 3.91
+    },
+    "trombone": {
+        "gold": 4.52,
+        "silver": 5.85,
+        "bronze": 7.5
+    },
+    "t-shirt": {
+        "gold": 3.27,
+        "silver": 4.08,
+        "bronze": 4.69
+    },
+    "tractor": {
+        "gold": 5.44,
+        "silver": 6.16,
+        "bronze": 7.19
+    },
+    "traffic light": {
+        "gold": 3.44,
+        "silver": 4.3,
+        "bronze": 5.18
+    },
+    "underwear": {
+        "gold": 2.64,
+        "silver": 3.54,
+        "bronze": 4.38
+    },
+    "triangle": {
+        "gold": 0.77,
+        "silver": 1.02,
+        "bronze": 1.33
+    },
+    "watermelon": {
+        "gold": 2.11,
+        "silver": 3.26,
+        "bronze": 4.49
+    },
+    "waterslide": {
+        "gold": 2.49,
+        "silver": 3.63,
+        "bronze": 4.31
+    },
+    "washing machine": {
+        "gold": 3.06,
+        "silver": 3.87,
+        "bronze": 5.15
+    },
+    "violin": {
+        "gold": 5.44,
+        "silver": 6.52,
+        "bronze": 7.39
+    },
+    "tornado": {
+        "gold": 1.75,
+        "silver": 2.53,
+        "bronze": 3.1
+    },
+    "wine bottle": {
+        "gold": 3.38,
+        "silver": 4.04,
+        "bronze": 4.72
+    },
+    "wine glass": {
+        "gold": 3.0,
+        "silver": 3.83,
+        "bronze": 4.73
+    },
+    "whale": {
+        "gold": 6.14,
+        "silver": 7.16,
+        "bronze": 8.47
+    },
+    "van": {
+        "gold": 4.26,
+        "silver": 5.5,
+        "bronze": 6.43
+    },
+    "train": {
+        "gold": 7.7,
+        "silver": 9.05,
+        "bronze": 11.01
+    },
+    "truck": {
+        "gold": 4.97,
+        "silver": 6.2,
+        "bronze": 7.51
+    },
+    "windmill": {
+        "gold": 5.74,
+        "silver": 6.68,
+        "bronze": 7.87
+    },
+    "vase": {
+        "gold": 2.47,
+        "silver": 3.42,
+        "bronze": 4.43
+    },
+    "tree": {
+        "gold": 2.71,
+        "silver": 3.45,
+        "bronze": 4.26
+    },
+    "trumpet": {
+        "gold": 3.6,
+        "silver": 4.59,
+        "bronze": 5.55
+    },
+    "zebra": {
+        "gold": 7.13,
+        "silver": 8.19,
+        "bronze": 10.11
+    },
+    "umbrella": {
+        "gold": 3.19,
+        "silver": 3.84,
+        "bronze": 4.71
+    },
+    "wheel": {
+        "gold": 3.43,
+        "silver": 4.39,
+        "bronze": 5.57
+    },
+    "zigzag": {
+        "gold": 0.74,
+        "silver": 1.07,
+        "bronze": 1.5
+    },
+    "yoga": {
+        "gold": 3.09,
+        "silver": 4.47,
+        "bronze": 5.96
+    },
+    "wristwatch": {
+        "gold": 3.98,
+        "silver": 5.31,
+        "bronze": 6.64
+    }
+}

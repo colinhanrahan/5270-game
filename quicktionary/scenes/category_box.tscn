@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cpdbmi54wlobx"]
+
+[ext_resource type="Theme" uid="uid://drxuknxm8sy3v" path="res://assets/grid_box.tres" id="1_uetl7"]
+
+[node name="CategoryBox" type="Button" unique_id=2140705125]
+custom_minimum_size = Vector2(150, 150)
+offset_right = 150.0
+offset_bottom = 150.0
+theme = ExtResource("1_uetl7")
+theme_override_font_sizes/font_size = 20
+autowrap_mode = 2

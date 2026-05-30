@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://dic0i7gt27y5n"]
+
+[ext_resource type="Script" uid="uid://6qxb07oxfk5b" path="res://scripts/singleplayer_lobby.gd" id="1_it7tt"]
+[ext_resource type="Theme" uid="uid://dyr4ekgd5xctr" path="res://assets/mode_label.tres" id="2_100r1"]
+[ext_resource type="Theme" uid="uid://drxuknxm8sy3v" path="res://assets/grid_box.tres" id="3_100r1"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_opwp4"]
+load_path = "res://.godot/imported/background.png-1fdba8b6a966ce2c2ffc607f7c096e95.ctex"
+
+[node name="Singleplayer" type="Control" unique_id=108852350]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_it7tt")
+
+[node name="BackgroundImage" type="TextureRect" parent="." unique_id=508192958]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CompressedTexture2D_opwp4")
+stretch_mode = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=430598527]
+custom_minimum_size = Vector2(800, 640)
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=1911171725]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TopSpacer" type="Control" parent="ScrollContainer/VBoxContainer" unique_id=1656810244]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+
+[node name="CategoryGrid" type="GridContainer" parent="ScrollContainer/VBoxContainer" unique_id=1807066948]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 5
+
+[node name="BottomSpacer" type="Control" parent="ScrollContainer/VBoxContainer" unique_id=1008385875]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+
+[node name="SingleplayerMargin" type="MarginContainer" parent="." unique_id=270018504]
+layout_mode = 1
+offset_right = 328.0
+offset_bottom = 136.0
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="SingleplayerLabel" type="Label" parent="SingleplayerMargin" unique_id=1446125201]
+layout_mode = 2
+theme = ExtResource("2_100r1")
+text = "Singleplayer"
+
+[node name="MainMenuMargin" type="MarginContainer" parent="." unique_id=1397096909]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -374.0
+offset_bottom = 146.0
+grow_horizontal = 0
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="MainMenuButton" type="Button" parent="MainMenuMargin" unique_id=1186988735]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+theme = ExtResource("3_100r1")
+text = "← Main Menu"
+
+[connection signal="pressed" from="MainMenuMargin/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
