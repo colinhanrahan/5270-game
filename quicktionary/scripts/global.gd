@@ -16,7 +16,7 @@ func play_music(path: String) -> void:
 
 # network state
 #var server_url: String = "ws://localhost:8765"
-var server_url: String = "wss://cold-monkeys-dig.loca.lt"
+var server_url: String = "wss://web-production-1e454e.up.railway.app/"
 var socket := WebSocketPeer.new()
 var is_connected := false
 var room_code: String = ""
