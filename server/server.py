@@ -6,6 +6,7 @@ import json
 import random
 import string
 import websockets
+import os
 
 import cairocffi as cairo # to match original dataset's preprocessing
 import numpy as np
@@ -181,8 +182,7 @@ async def handle_submit_score(websocket, data):
     await websocket.send(json.dumps(response))
 
 async def main():
-    async with websockets.serve(handler, "0.0.0.0", 8765):
-        print("Room server running on ws://0.0.0.0:8765")
+    port = int(os.environ.get("PORT", 8765))
+    async with websockets.serve(handler, "0.0.0.0", port):
+        print(f"Room server running on ws://0.0.0.0:{port}")
         await asyncio.Future()
-
-asyncio.run(main())
