@@ -5,12 +5,10 @@ extends Control
 @onready var name_input_container: HBoxContainer = %NameInputContainer
 @onready var list_container: VBoxContainer = %LeaderboardList
 @onready var scroll_container: ScrollContainer = %ScrollContainer
-@onready var lobby_button: Button = %LobbyButton
 
 var my_time: float = 0.0 # sent from singleplayer_game
 
 func _ready() -> void:
-	lobby_button.hide()
 	scroll_container.hide()
 
 func initialize_popup(player_time: float) -> void:
@@ -76,4 +74,3 @@ func populate_leaderboard(player_time: float, highscores: Array, medals: Diction
 			
 		list_container.add_child(lbl)
 	
-	lobby_button.show()
