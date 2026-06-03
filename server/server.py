@@ -188,3 +188,5 @@ async def main():
     async with websockets.serve(handler, "0.0.0.0", port):
         print(f"Room server running on ws://0.0.0.0:{port}")
         await asyncio.Future()
+
+asyncio.run(main())
