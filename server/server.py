@@ -12,7 +12,9 @@ import cairocffi as cairo # to match original dataset's preprocessing
 import numpy as np
 import tensorflow as tf
 
-interpreter = tf.lite.Interpreter(model_path="quickdraw_model.tflite")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+interpreter = tf.lite.Interpreter(model_path=os.path.join(BASE_DIR, "quickdraw_model.tflite"))
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
@@ -20,14 +22,14 @@ output_details = interpreter.get_output_details()
 print("Input shape:", input_details[0]['shape'])
 print("Input dtype:", input_details[0]['dtype'])
 
-with open("labels.txt") as f:
+with open(os.path.join(BASE_DIR, "labels.txt")) as f:
     labels = [line.strip() for line in f.readlines()]
 print(f"Loaded {len(labels)} labels")
 
 rooms = {}  # code: websocket
 
-MEDALS_FILE = "medals.json"
-HIGHSCORES_FILE = "highscores.json"
+MEDALS_FILE = os.path.join(BASE_DIR, "medals.json")
+HIGHSCORES_FILE = os.path.join(BASE_DIR, "highscores.json")
 
 def load_medals_for_category(category: str) -> dict:
     """Loads target medal times for a category, falls back to defaults if missing."""

@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Cipher.mp3-1fefc06501bbfc25bb09bf46c50c51ef.m
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

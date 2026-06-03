@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/QuirkyDog.mp3-bcb5373700e36ef1a0049a50c3635d8
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0
