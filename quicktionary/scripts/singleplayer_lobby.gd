@@ -5,6 +5,7 @@ const BOX_TEMPLATE = preload("res://scenes/category_box.tscn")
 @onready var grid_container = %CategoryGrid
 
 func _ready() -> void:
+	Global.play_music("res://assets/LocalForecast.mp3")
 	load_and_build_grid()
 
 func load_and_build_grid() -> void:
@@ -30,7 +31,8 @@ func load_and_build_grid() -> void:
 func _on_category_selected(category_name: String) -> void:
 	# store category globally so that singleplayer_game can read it
 	Global.selected_category = category_name
-	get_tree().change_scene_to_file("res://scenes/singleplayer_game.tscn")
+	Global.ui_change_requested.emit("res://scenes/singleplayer_game.tscn", true)
+
 
 func _on_main_menu_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+	Global.ui_change_requested.emit("res://scenes/main_menu.tscn", false)

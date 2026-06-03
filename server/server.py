@@ -65,6 +65,7 @@ async def handler(websocket):
                 room_code = make_code()
                 rooms[room_code] = {websocket}
                 await websocket.send(json.dumps({"type": "created", "code": room_code}))
+                print("sent room code for create")
             elif kind == "join":
                 room_code = msg["code"].upper()
                 if room_code not in rooms:

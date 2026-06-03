@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://d0s1ys0xhfssw"]
+
+[ext_resource type="Script" uid="uid://ixcna6c5btjc" path="res://scripts/master.gd" id="1_jooxx"]
+[ext_resource type="Texture2D" uid="uid://qd5smu5p0o00" path="res://assets/background.png" id="2_rnotf"]
+
+[node name="Master" type="CanvasLayer" unique_id=1377886073]
+script = ExtResource("1_jooxx")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=230878645]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_rnotf")
+stretch_mode = 1
+
+[node name="UIContainer" type="Control" parent="." unique_id=430310218]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1985125522]

@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://l3whuiitm5fq"]
+
+[ext_resource type="Texture2D" uid="uid://qd5smu5p0o00" path="res://assets/background.png" id="1_ei618"]
+[ext_resource type="Script" uid="uid://34g8tia53gnx" path="res://scripts/attributions.gd" id="1_o80ni"]
+[ext_resource type="Theme" uid="uid://dmppwnm045n5s" path="res://assets/main_theme.tres" id="2_o80ni"]
+[ext_resource type="FontFile" uid="uid://swi7tkrpn8k3" path="res://assets/JetBrainsMono-VariableFont_wght.ttf" id="4_ei618"]
+
+[sub_resource type="FontVariation" id="FontVariation_o80ni"]
+base_font = ExtResource("4_ei618")
+variation_embolden = 1.0
+
+[node name="Control" type="Control" unique_id=1756185757]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o80ni")
+
+[node name="BackgroundImage" type="TextureRect" parent="." unique_id=726820453]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ei618")
+stretch_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1978762415]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer" unique_id=86661837]
+layout_mode = 2
+theme = ExtResource("2_o80ni")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer" unique_id=384238888]
+layout_mode = 2
+theme = ExtResource("2_o80ni")
+theme_override_constants/separation = 10
+
+[node name="AttributionsLabel" type="Label" parent="MarginContainer/PanelContainer/VBoxContainer" unique_id=1632230600]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_o80ni")
+text = "Attributions"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/PanelContainer/VBoxContainer" unique_id=1534458399]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextBlock" type="RichTextLabel" parent="MarginContainer/PanelContainer/VBoxContainer/ScrollContainer" unique_id=1314504470]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "\"Quicktionary!\" is a combination of [url=https://https://quickdraw.withgoogle.com]Google Quickdraw[/url] and [url=https://skribbl.io]skribbl.io[/url] (Pictionary).
+
+Background image: [url=https://skribbl.io]skribbl.io[/url] (modified)
+Image classifier: [url=https://huggingface.co/zarqankhn/quickdraw-345-tflite]zarqankhn[/url] on Hugging Face
+Medal timing data: [url=https://console.cloud.google.com/storage/browser/quickdraw_dataset]Original Quickdraw dataset[/url] from Google
+Music: [url=https://archive.org/details/nintendo-wii-music-collection/]Nintendo Wii music collection[/url] via Internet Archive, [url=https://incompetech.com/music/royalty-free/music.html]Kevin Macleod (Incompetech)[/url]
+Sound effects: [url=https://www.myinstants.com/en/search/?name=wii]Nintendo Wii[/url] via Myinstants.com
+Fonts: JetBrains Mono, Walter Turncoat, Noto Color Emoji
+
+AI usage notice: Anthropic AI models were used to learn Godot and to generate some code directly, but every line of code has been touched by a human. No assets are AI-generated, and the TTS model is whatever your browser has."
+
+[node name="MainMenuButton" type="Button" parent="MarginContainer/PanelContainer/VBoxContainer" unique_id=49975716 groups=["home_button"]]
+layout_mode = 2
+text = "Main Menu"
+
+[connection signal="meta_clicked" from="MarginContainer/PanelContainer/VBoxContainer/ScrollContainer/TextBlock" to="." method="_on_text_block_meta_clicked"]
+[connection signal="pressed" from="MarginContainer/PanelContainer/VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]

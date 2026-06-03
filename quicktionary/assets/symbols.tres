@@ -1,0 +1,11 @@
+[gd_resource type="FontVariation" format=3 uid="uid://mcpo6piid28e"]
+
+[ext_resource type="FontFile" uid="uid://4w63tmbvy6ee" path="res://assets/NotoSansSymbols-VariableFont_wght.ttf" id="1_3lils"]
+[ext_resource type="FontFile" uid="uid://2dy3s8pvdoaf" path="res://assets/NotoSansSymbols2-Regular.ttf" id="2_305f4"]
+
+[resource]
+fallbacks = Array[Font]([ExtResource("2_305f4")])
+base_font = ExtResource("1_3lils")
+variation_embolden = 1.0
+spacing_top = -16
+spacing_bottom = -16

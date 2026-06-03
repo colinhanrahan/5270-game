@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://cqgmuyn325tpf"]
+
+[ext_resource type="Texture2D" uid="uid://qd5smu5p0o00" path="res://assets/background.png" id="1_wi5qh"]
+[ext_resource type="Script" uid="uid://cv6qmp3gvsimi" path="res://scripts/how_to_play.gd" id="1_xkrkv"]
+[ext_resource type="Theme" uid="uid://dmppwnm045n5s" path="res://assets/main_theme.tres" id="2_e0xnd"]
+[ext_resource type="FontFile" uid="uid://swi7tkrpn8k3" path="res://assets/JetBrainsMono-VariableFont_wght.ttf" id="4_crhno"]
+
+[sub_resource type="FontVariation" id="FontVariation_2meg6"]
+base_font = ExtResource("4_crhno")
+variation_embolden = 1.0
+
+[node name="Control" type="Control" unique_id=1756185757]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xkrkv")
+
+[node name="BackgroundImage" type="TextureRect" parent="." unique_id=726820453]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_wi5qh")
+stretch_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1978762415]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer" unique_id=86661837]
+layout_mode = 2
+theme = ExtResource("2_e0xnd")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer" unique_id=384238888]
+layout_mode = 2
+theme = ExtResource("2_e0xnd")
+theme_override_constants/separation = 10
+
+[node name="HowToPlayLabel" type="Label" parent="MarginContainer/PanelContainer/VBoxContainer" unique_id=1632230600]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_2meg6")
+text = "How to Play"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/PanelContainer/VBoxContainer" unique_id=1534458399]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextBlock" type="Label" parent="MarginContainer/PanelContainer/VBoxContainer/ScrollContainer" unique_id=2068396507]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Use the left mouse button to draw the target category as quickly as possible. If you get stuck, reset with R or the reset button on screen. Hit ESC to return to the main menu at any time."
+autowrap_mode = 2
+
+[node name="MainMenuButton" type="Button" parent="MarginContainer/PanelContainer/VBoxContainer" unique_id=49975716 groups=["home_button"]]
+layout_mode = 2
+text = "Main Menu"
+
+[connection signal="pressed" from="MarginContainer/PanelContainer/VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]

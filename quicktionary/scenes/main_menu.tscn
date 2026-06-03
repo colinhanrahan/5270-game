@@ -20,6 +20,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="BackgroundImage" type="TextureRect" parent="." unique_id=536178978]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -66,5 +67,15 @@ layout_mode = 2
 text = "Multiplayer
 "
 
+[node name="HowToPlayButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1329101832]
+layout_mode = 2
+text = "How to Play"
+
+[node name="AttributionsButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1111223440]
+layout_mode = 2
+text = "Attributions"
+
 [connection signal="pressed" from="PanelContainer/VBoxContainer/SingleplayerButton" to="PanelContainer/VBoxContainer" method="_on_singleplayer_button_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/MultiplayerButton" to="PanelContainer/VBoxContainer" method="_on_multiplayer_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/HowToPlayButton" to="PanelContainer/VBoxContainer" method="_on_how_to_play_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/AttributionsButton" to="PanelContainer/VBoxContainer" method="_on_attributions_button_pressed"]

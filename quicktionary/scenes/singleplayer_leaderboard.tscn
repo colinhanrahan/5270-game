@@ -4,6 +4,13 @@
 [ext_resource type="StyleBox" uid="uid://bqbmoi6t0crcy" path="res://assets/menu_box.tres" id="2_3b8wp"]
 [ext_resource type="Theme" uid="uid://dmppwnm045n5s" path="res://assets/main_theme.tres" id="2_p2w1v"]
 [ext_resource type="Theme" uid="uid://drxuknxm8sy3v" path="res://assets/grid_box.tres" id="3_3b8wp"]
+[ext_resource type="FontFile" uid="uid://2dy3s8pvdoaf" path="res://assets/NotoSansSymbols2-Regular.ttf" id="5_e3qo8"]
+
+[sub_resource type="FontVariation" id="FontVariation_yakno"]
+base_font = ExtResource("5_e3qo8")
+variation_embolden = 0.2
+spacing_top = -10
+spacing_bottom = -16
 
 [node name="SingleplayerLeaderboard" type="Control" unique_id=1608143617]
 layout_mode = 3
@@ -47,13 +54,14 @@ theme_override_constants/separation = 10
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
-placeholder_text = "Name..."
+placeholder_text = " Name..."
 max_length = 16
 
 [node name="SubmitButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/NameInputContainer" unique_id=770500843]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_yakno")
 text = "✓"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=1754578874]

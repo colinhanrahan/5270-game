@@ -35,10 +35,10 @@ func _on_submit_button_pressed() -> void:
 		Global.socket.send_text(JSON.stringify(payload))
 
 func _on_lobby_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/singleplayer_lobby.tscn")
+	Global.ui_change_requested.emit("res://scenes/singleplayer_lobby.tscn", true)
 
 func _on_replay_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/singleplayer_game.tscn")
+	Global.ui_change_requested.emit("res://scenes/singleplayer_game.tscn", true)
 
 func populate_leaderboard(player_time: float, highscores: Array, medals: Dictionary) -> void:
 	name_input_container.hide()

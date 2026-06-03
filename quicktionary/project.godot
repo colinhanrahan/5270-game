@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Quicktionary"
-run/main_scene="uid://bhac6248v6ppb"
+run/main_scene="uid://d0s1ys0xhfssw"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -27,9 +27,13 @@ window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 window/stretch/scale=2.0
 
+[global_group]
+
+home_button=""
+
 [gui]
 
-theme/custom_font="uid://ctix50tgvq4ja"
+theme/custom_font="uid://dh4l1n21xj2jk"
 
 [physics]
 

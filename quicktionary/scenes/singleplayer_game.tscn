@@ -5,6 +5,13 @@
 [ext_resource type="Theme" uid="uid://drxuknxm8sy3v" path="res://assets/grid_box.tres" id="2_jxdy4"]
 [ext_resource type="FontFile" uid="uid://swi7tkrpn8k3" path="res://assets/JetBrainsMono-VariableFont_wght.ttf" id="3_jxdy4"]
 [ext_resource type="Script" uid="uid://ch6qw1v0cnxxs" path="res://scripts/singleplayer_canvas.gd" id="3_p0rrt"]
+[ext_resource type="FontFile" uid="uid://2dy3s8pvdoaf" path="res://assets/NotoSansSymbols2-Regular.ttf" id="6_eoif4"]
+
+[sub_resource type="FontVariation" id="FontVariation_yv1gn"]
+base_font = ExtResource("6_eoif4")
+variation_embolden = 0.5
+spacing_top = -4
+spacing_bottom = -16
 
 [node name="SingleplayerGame" type="Control" unique_id=1376747105]
 layout_mode = 3
@@ -98,3 +105,23 @@ offset_top = 177.0
 offset_right = 1152.0
 offset_bottom = 177.0
 script = ExtResource("3_p0rrt")
+
+[node name="ResetMargin" type="MarginContainer" parent="." unique_id=362186459]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_bottom = 106.0
+grow_horizontal = 0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="ResetButton" type="Button" parent="ResetMargin" unique_id=1607003742]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_yv1gn")
+text = "⌫"
+
+[connection signal="pressed" from="ResetMargin/ResetButton" to="." method="_on_reset_button_pressed"]

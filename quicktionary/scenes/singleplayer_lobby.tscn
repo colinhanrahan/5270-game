@@ -2,10 +2,16 @@
 
 [ext_resource type="Script" uid="uid://6qxb07oxfk5b" path="res://scripts/singleplayer_lobby.gd" id="1_it7tt"]
 [ext_resource type="Theme" uid="uid://dyr4ekgd5xctr" path="res://assets/mode_label.tres" id="2_100r1"]
-[ext_resource type="Theme" uid="uid://drxuknxm8sy3v" path="res://assets/grid_box.tres" id="3_100r1"]
+[ext_resource type="FontFile" uid="uid://swi7tkrpn8k3" path="res://assets/JetBrainsMono-VariableFont_wght.ttf" id="3_i12ea"]
+[ext_resource type="Theme" uid="uid://dmppwnm045n5s" path="res://assets/main_theme.tres" id="4_i12ea"]
+[ext_resource type="FontVariation" uid="uid://mcpo6piid28e" path="res://assets/symbols.tres" id="5_wjqca"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_opwp4"]
 load_path = "res://.godot/imported/background.png-1fdba8b6a966ce2c2ffc607f7c096e95.ctex"
+
+[sub_resource type="FontVariation" id="FontVariation_wjqca"]
+base_font = ExtResource("3_i12ea")
+variation_embolden = 1.0
 
 [node name="Singleplayer" type="Control" unique_id=108852350]
 layout_mode = 3
@@ -17,6 +23,7 @@ grow_vertical = 2
 script = ExtResource("1_it7tt")
 
 [node name="BackgroundImage" type="TextureRect" parent="." unique_id=508192958]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -69,6 +76,7 @@ theme_override_constants/margin_bottom = 40
 [node name="SingleplayerLabel" type="Label" parent="SingleplayerMargin" unique_id=1446125201]
 layout_mode = 2
 theme = ExtResource("2_100r1")
+theme_override_fonts/font = SubResource("FontVariation_wjqca")
 text = "Singleplayer"
 
 [node name="MainMenuMargin" type="MarginContainer" parent="." unique_id=1397096909]
@@ -79,16 +87,21 @@ anchor_right = 1.0
 offset_left = -374.0
 offset_bottom = 146.0
 grow_horizontal = 0
-theme_override_constants/margin_left = 40
-theme_override_constants/margin_top = 40
-theme_override_constants/margin_right = 40
-theme_override_constants/margin_bottom = 40
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
 
-[node name="MainMenuButton" type="Button" parent="MainMenuMargin" unique_id=1186988735]
+[node name="PanelContainer" type="PanelContainer" parent="MainMenuMargin" unique_id=131002089]
+layout_mode = 2
+size_flags_horizontal = 8
+theme = ExtResource("4_i12ea")
+
+[node name="MainMenuButton" type="Button" parent="MainMenuMargin/PanelContainer" unique_id=1186988735 groups=["home_button"]]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
-theme = ExtResource("3_100r1")
-text = "← Main Menu"
+theme_override_fonts/font = ExtResource("5_wjqca")
+text = "→"
 
-[connection signal="pressed" from="MainMenuMargin/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="MainMenuMargin/PanelContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]

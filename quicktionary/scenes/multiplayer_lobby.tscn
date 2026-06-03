@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://qd5smu5p0o00" path="res://assets/background.png" id="1_4ea5e"]
 [ext_resource type="Script" uid="uid://emyv7nk3b471" path="res://scripts/multiplayer_lobby.gd" id="1_o1atq"]
 [ext_resource type="FontFile" uid="uid://swi7tkrpn8k3" path="res://assets/JetBrainsMono-VariableFont_wght.ttf" id="4_nwqwq"]
+[ext_resource type="FontVariation" uid="uid://mcpo6piid28e" path="res://assets/symbols.tres" id="5_2meg6"]
 
 [sub_resource type="FontVariation" id="FontVariation_2meg6"]
 base_font = ExtResource("4_nwqwq")
@@ -16,8 +17,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_o1atq")
 
 [node name="BackgroundImage" type="TextureRect" parent="." unique_id=726820453]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -47,7 +50,6 @@ layout_mode = 2
 size_flags_vertical = 4
 theme = ExtResource("1_0t1s1")
 theme_override_constants/separation = 10
-script = ExtResource("1_o1atq")
 
 [node name="LobbyLabel" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1632230600]
 layout_mode = 2
@@ -76,12 +78,14 @@ size_flags_vertical = 10
 theme_override_constants/separation = 10
 
 [node name="RoomInput" type="LineEdit" parent="PanelContainer/VBoxContainer/CreateJoinBox/JoinBox/HBoxContainer" unique_id=539919969]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="JoinButton" type="Button" parent="PanelContainer/VBoxContainer/CreateJoinBox/JoinBox/HBoxContainer" unique_id=1280843593]
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_2meg6")
 text = "→"
 
 [node name="ColorRect" type="ColorRect" parent="PanelContainer/VBoxContainer/CreateJoinBox" unique_id=472483098]
@@ -104,10 +108,10 @@ autowrap_mode = 2
 layout_mode = 2
 text = "Create Room"
 
-[node name="MainMenuButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=49975716]
+[node name="MainMenuButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=49975716 groups=["home_button"]]
 layout_mode = 2
 text = "Main Menu"
 
-[connection signal="pressed" from="PanelContainer/VBoxContainer/CreateJoinBox/JoinBox/HBoxContainer/JoinButton" to="PanelContainer/VBoxContainer" method="_on_join_button_pressed"]
-[connection signal="pressed" from="PanelContainer/VBoxContainer/CreateJoinBox/CreateBox/CreateButton" to="PanelContainer/VBoxContainer" method="_on_create_button_pressed"]
-[connection signal="pressed" from="PanelContainer/VBoxContainer/MainMenuButton" to="PanelContainer/VBoxContainer" method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/CreateJoinBox/JoinBox/HBoxContainer/JoinButton" to="." method="_on_join_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/CreateJoinBox/CreateBox/CreateButton" to="." method="_on_create_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]

@@ -1,0 +1,118 @@
+[gd_scene format=3 uid="uid://c5vqep6iq4byb"]
+
+[ext_resource type="Theme" uid="uid://dmppwnm045n5s" path="res://assets/main_theme.tres" id="1_jxfkk"]
+[ext_resource type="Script" uid="uid://cdmvpd4onirw1" path="res://scripts/multiplayer_game.gd" id="2_jxfkk"]
+[ext_resource type="Theme" uid="uid://drxuknxm8sy3v" path="res://assets/grid_box.tres" id="3_0j1od"]
+[ext_resource type="FontFile" uid="uid://swi7tkrpn8k3" path="res://assets/JetBrainsMono-VariableFont_wght.ttf" id="4_q5cjx"]
+[ext_resource type="Script" uid="uid://ckqsydxodtnks" path="res://scripts/multiplayer_canvas.gd" id="5_a1oyb"]
+
+[node name="SingleplayerGame" type="Control" unique_id=1376747105]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_jxfkk")
+script = ExtResource("2_jxfkk")
+
+[node name="Background" type="ColorRect" parent="." unique_id=237829468]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TargetMargin" type="MarginContainer" parent="." unique_id=171214102]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 56.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="TargetLabel" type="Label" parent="TargetMargin" unique_id=1763199196]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("3_0j1od")
+horizontal_alignment = 1
+
+[node name="TimerMargin" type="MarginContainer" parent="." unique_id=1574881812]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -81.0
+offset_top = -136.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="TimerLabel" type="Label" parent="TimerMargin" unique_id=429428563]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("3_0j1od")
+theme_override_fonts/font = ExtResource("4_q5cjx")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PredictionsMargin" type="MarginContainer" parent="." unique_id=728057260]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="PredictionsLabel" type="RichTextLabel" parent="PredictionsMargin" unique_id=1920355788]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_0j1od")
+theme_override_fonts/normal_font = ExtResource("4_q5cjx")
+bbcode_enabled = true
+fit_content = true
+vertical_alignment = 2
+
+[node name="WinnerMargin" type="MarginContainer" parent="." unique_id=629077065]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="WinnerLabel" type="Label" parent="WinnerMargin" unique_id=1474390367]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+horizontal_alignment = 2
+
+[node name="Canvas" type="Control" parent="." unique_id=607079748]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_top = 177.0
+offset_right = 1152.0
+offset_bottom = 177.0
+script = ExtResource("5_a1oyb")
